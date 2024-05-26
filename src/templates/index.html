@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Autos</title>
+    <!-- LINK A BOOSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- HEADER -->
+    <div>
+        <div class="p-5" 
+        style= "background-image: url(/static/images/background_index.jpg); 
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        ">
+            <h1 class="p-5"></h1>
+        </div>
+        <nav
+            class="navbar navbar-expand-sm navbar-dark bg-black" 
+        >
+            <a class="navbar-brand w-25 d-flex justify-content-center me-1" href="#">
+                <img class="object-fit-contain" src="/static/images/logo.png" alt="" width="30%" height="100%">
+                <p>FABU-AUTOS</p>
+            </a>
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                        <a class="nav-link active" href="#" aria-current="page"
+                            >Inicio <span class="visually-hidden">(current)</span></a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Marcas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                    
+                    
+                </ul>
+                <div class="dropdown open">
+                    <button
+                        class="btn dropdown-toggle bg-white border border-dark border-2 rounded-5"
+                        type="button"
+                        id="triggerId"
+                        data-bs-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                    >
+                        <img src="/static/images/account.png" alt="user" width="50" height="50">
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="triggerId">
+                        <a class="{{usr_conf}}" href="/login">
+                            <img src="/static/images/login.png" width=50px height="50px" alt="">{{usuario}}
+                        </a>
+                        <a class="dropdown-item" href="{{usr_conf2}}"> <!-- usr_conf2, 3 == 2. A donde envia, 3.Si es registro o cerrar sesion -->
+                            <img src="/static/images/register.png" width=50px height="50px" alt="">{{usr_conf3}}
+                        </a>
+                        <a class="{{bs_conf}}" href="#">
+                           <img src="/static/images/conf.png" width=50px height="50px" alt=""> Configuracion
+                        </a>
+                    </div>        
+            </div>
+        </nav>
+    </div>
+
+    <!-- MAIN -->
+    <div>
+        
+    </div>
+</body>
+</html>
