@@ -1,0 +1,1 @@
+Una muy simple página web realizada con Python y Flask, con el proposito de que me sirva tanto como proyecto personal como para cumplir con la tarea de la Universidad de realizar pruebas a un funcion de login utilizando pyTest
